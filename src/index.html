@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Customer Onboarding Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="border shadow-sm p-3 mb-5 bg-white rounded"
+      style="width: 50vw; margin: 0.5rem"
+    >
+      <div class="alert alert-dark">Employee Onboarding Form</div>
+      <form id="onboarding-form" style="margin: 0.5rem">
+        
+        <!-- Basic information -->
+        <span style="font-weight: bold; font-size: x-large"
+          >Basic Information</span
+        >
+        <hr />
+
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="firstName">First Name *</label>
+            <input type="text" class="form-control" id="firstName" required/>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="lastName">Last Name *</label>
+            <input type="text" class="form-control" id="lastName" required/>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email *</label>
+            <input type="email" class="form-control" id="inputEmail4" required/>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="phoneNumber">Mobile Number *</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">04</span>
+              </div>
+
+              <input
+                type="number"
+                class="form-control"
+                placeholder="xx-xxx-xxx"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="departmentName">Department</label>
+            <select id="departmentName" class="form-control">
+              <option selected></option>
+              <option>Finance</option>
+              <option>HR</option>
+              <option>IT</option>
+              <option>Legal and Compliance</option>
+              <option>Marketing</option>
+              <option>Risk Management</option>
+              <option>Tax</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="managerName">Manager Name</label>
+            <input type="text" class="form-control" id="managerName"/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputJobTitle">Job Title</label>
+          <input type="text" class="form-control" id="inputJobTitle"/>
+        </div>
+
+        <div class="form-group">
+          <label for="inputAddress">Address *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputSuburb">Suburb *</label>
+            <input type="text" class="form-control" id="inputSuburb" required/>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="inputState">State *</label>
+            <select id="inputState" class="form-control">
+              <option selected></option>
+              <option>VIC</option>
+              <option>QLD</option>
+              <option>NSW</option>
+              <option>WA</option>
+              <option>SA</option>
+              <option>NT</option>
+              <option>TAS</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="inputPostCode">Post Code *</label>
+            <input type="text" class="form-control" id="inputPostCode" required/>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <span>Date of Birth *</span>
+          </div>
+          <div class="form-group">
+            <input type="date" class="form-control" id="DOB" required/>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <span>Sex *</span>
+          </div>
+          <div class="form-group">
+            <select id="sex" class="form-control">
+              <option selected></option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Non Binary</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <span>Start Date </span>
+          </div>
+          <div class="form-group">
+            <input type="date" class="form-control" id="inputDate"/>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <span>Residency Status *</span>
+          </div>
+          <div class="form-group">
+            <select id="inputState" class="form-control" required>
+              <option selected></option>
+              <option>Permanent Residence</option>
+              <option>Australian Citizen</option>
+              <option>NZ Citizen</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+
+        <!-- Financial information -->
+        <span style="font-weight: bold; font-size: x-large"
+          >Financial Information</span
+        >
+        <hr />
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputAnnualSalary">Annual Salary *</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="inputAnnualSalary"
+                required
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="inputTFN">TFN *</label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputTFN"
+              placeholder="123456789"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputAnnualTax">Annual Tax</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="inputAnnualTax"
+                readonly
+              />
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="inputSuperannuation">Superannuation</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="inputSuperannuation"
+                readonly
+              />
+            </div>
+          </div>
+        </div>
+
+        <button id="submit-button" class="btn btn-primary" type="submit">Submit</button>
+      </form>
+
+      <p id="form-success-submit" style="display: none">Form successfully submitted!</p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
